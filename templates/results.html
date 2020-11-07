@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>your results</title>
 	<link rel="stylesheet" href="static/stylesheet_movie.css">
-
+	<title>your results</title>
 </head>
 <body>
 	<br>
 	<br>
 		<h1>The Results</h1>
 
-		<h2 class="results">{{name}}</h2>
-		<h2 class="results">{{star}}</h2>
-		<h2 class="results">{{opinion}}</h2>
+		<p>{{name}}</p>
+		<p>{{star}}</p>
+		<p>{{opinion}}</p>
+
+	<br>
+
+	<form action='/feedback' method='post'>
+		<input type="text" name="feedback" placeholder="What do you think of our analysis?" required="required" />
+		<button type="submit" class="btn btn-primary btn-block btn-large">Give Feedback</button>
+		</form>
 		
 
 		
